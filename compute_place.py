@@ -5,7 +5,7 @@ import urllib.request
 
 
 REG_API_URL = os.environ.get("REG_API_URL", "https://reg.algocode.ru/_api/reg_2026.json")
-TARGET_NAME = os.environ.get("TARGET_NAME", "Сагдуллин Марсель")
+TARGET_NAME = os.environ.get("TARGET_NAME", "Елфимов Аскар")
 TARGET_FORM = int(os.environ.get("TARGET_FORM", "11"))
 OUT_FILE = os.environ.get("OUT_FILE", "place.json")
 
