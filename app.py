@@ -9,7 +9,7 @@ import requests
 
 
 REG_API_URL = os.environ.get("REG_API_URL", "https://reg.algocode.ru/_api/reg_2026.json")
-TARGET_NAME = os.environ.get("TARGET_NAME", "Елфимов Аскар")
+TARGET_NAME = os.environ.get("TARGET_NAME", "Сагдуллин Марсель")
 TARGET_FORM = int(os.environ.get("TARGET_FORM", "11"))
 
 # Keep a short cache to avoid hammering the upstream.
