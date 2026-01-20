@@ -36,7 +36,8 @@
       async function refresh() {
         try {
           statusEl.textContent = "обновление…";
-          const r = await fetch("./place.json", { cache: "no-store" });
+          // GitHub Pages/браузер иногда кешируют JSON, поэтому добавляем cache-busting параметр.
+          const r = await fetch(`./place.json?t=${Date.now()}`, { cache: "no-store" });
           const j = await r.json();
           placeEl.textContent = j.place ?? "—";
           statusEl.textContent = `обновлено: ${j.updated_at ?? "—"}`;
